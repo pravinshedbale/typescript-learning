@@ -1,0 +1,20 @@
+Typescript
+    - superset of javascript.
+    - A language build up on javascript.
+    - Added new features and advantages to JS.
+    - Its a compiler also.
+    - Features are compiled to JS workarounds and possible errors are thrown.
+
+Advantages
+    - Types are added.
+    - Interface and generics ara available.
+    - Next generation JS features are available.
+    - Meta programming features such as decorators are available.
+    - Rich configuration options.
+    - Modern tooling that helps even in non ts projects.
+
+Core Data Types
+    - number : All numbers, no differentiation between integer or float.
+    - string : All text values.
+    - boolean : Just true/false, no truthy and falsy values.
+
