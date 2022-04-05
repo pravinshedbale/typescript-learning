@@ -1,6 +1,6 @@
 Typescript
-    - superset of javascript.
-    - A language build up on javascript.
+    - Superset of javascript.
+    - A language build up on javascript(Not a new language).
     - Added new features and advantages to JS.
     - Its a compiler also.
     - Features are compiled to JS workarounds and possible errors are thrown.
@@ -18,3 +18,11 @@ Core Data Types
     - string : All text values.
     - boolean : Just true/false, no truthy and falsy values.
 
+
+Important Note - The core primitive types in Typescript as all lowercase (string, number).
+
+Type Inference
+    - In typescript there are several places where type inference is used.
+    - It provide type information when there is no explicit type annotation.
+    - example : let x = 3;
+    - The type of x variable is inferred to be number.
