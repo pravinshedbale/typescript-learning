@@ -26,3 +26,23 @@ Type Inference
     - It provide type information when there is no explicit type annotation.
     - example : let x = 3;
     - The type of x variable is inferred to be number.
+
+Objects
+    - We can provide generic object type by adding "object" type to the variable.
+    - If we want to provide proper object which contains member then we can put {} as type.
+    - {} - Specialized object type notation.
+    - Object types can also be created for nested Objects.
+
+Array
+    - Any javascript array, type can be flexible or strict(regarding the element types).
+    - const arr:type[]
+
+Tuple
+    - If we want to restrict array with ref to number of elements and its types then we can use tuple.
+    - In tuple we specify the type for each member.
+    - let role:[string, number] = ["Pravin", 1]
+    - pus() : this method is exceptionally works on tuple, ts cannot catch this error.
+
+Enum
+    - Automatically enumerated global constant identifiers.
+    - 
