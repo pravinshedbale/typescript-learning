@@ -45,4 +45,26 @@ Tuple
 
 Enum
     - Automatically enumerated global constant identifiers.
-    - 
+    - enum Name {name1, name2....namen} // Automatically assign the index values
+    - If we want to explicitly specify value, we can -> enum Name{name1=value1,....,namen=valuen}
+
+Any
+    - Any kind of value, no specific type assignment.
+
+Union
+    - If we want to specify more than one type we can use union.
+    - In this case we are fine with either of the mentioned data.
+    - Compiler will not throw error if we used any one of it.
+    - Pipe symbol (|) is used to union types in ts.
+
+Literal
+    - Literal is something that expect exactly same value which has been specified.
+    - It may be specified single or multiple using union.
+
+
+Type Aliases / Custom types
+    - If we are using same union type in multiple places.
+    - It is hectic to type whole union all the time.
+    - Aliases is something which can overcome this problem.
+    - We can specifiy the union type under a alias and use that alias wherever we want to use.
+    - type keyword can be used to declare the alias to union.
