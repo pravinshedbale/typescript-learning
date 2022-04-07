@@ -86,3 +86,18 @@ Functions as Types
     - we can specifiy the Function type to reference variable.
     - example : function add(){....} => let addDummy: Function = add;
     - We can also specify the function signature with (parameters)=>return type;
+
+Callbacks
+    - Ts function can expect cb.
+    - Cb is expected to return nothing.
+    - However if we returned anything it wont throw error.
+
+Unknown
+    - Unknow is a type in ts.
+    - We can only assign unknow value to the variable having unknown type after checking its type.
+    - It is preferrable than any.
+
+Never type
+    - never is another type that function returns.
+    - utility functions like throwError or in general any functions that we know will never return anything.
+    - Such functions can be assigned return type never.
