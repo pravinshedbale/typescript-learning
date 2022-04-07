@@ -68,3 +68,21 @@ Type Aliases / Custom types
     - Aliases is something which can overcome this problem.
     - We can specifiy the union type under a alias and use that alias wherever we want to use.
     - type keyword can be used to declare the alias to union.
+    - we can create aliases for literal types too.
+    - example : type User = {name:string; age:number} => const u1:user = {name: "Pravin", age:30} // this works
+
+Function Return Type
+    - By default ts Automatically infers the return type.
+    - Also we can explicitly assign the return type to the function.
+    - example: function name(params):returntype {...body...}
+    - Ts also have void return type.
+
+Functions as Types
+    - Sometimes we create a reference to function.
+    - By default any variable creted in ts has type any.
+    - After assigning function to variable one can assign any type of value to it.
+    - This is not expected.
+    - So typescript also introduces Function type.
+    - we can specifiy the Function type to reference variable.
+    - example : function add(){....} => let addDummy: Function = add;
+    - We can also specify the function signature with (parameters)=>return type;
