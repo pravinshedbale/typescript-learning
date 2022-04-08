@@ -29,7 +29,7 @@ Type Inference
 
 Objects
     - We can provide generic object type by adding "object" type to the variable.
-    - If we want to provide proper object which contains member then we can put {} as type.
+    - If we want to provide proper object which contains specific member then we can put {} as type.
     - {} - Specialized object type notation.
     - Object types can also be created for nested Objects.
 
@@ -41,7 +41,7 @@ Tuple
     - If we want to restrict array with ref to number of elements and its types then we can use tuple.
     - In tuple we specify the type for each member.
     - let role:[string, number] = ["Pravin", 1]
-    - pus() : this method is exceptionally works on tuple, ts cannot catch this error.
+    - push() : this method is exceptionally works on tuple, ts cannot catch this error.
 
 Enum
     - Automatically enumerated global constant identifiers.
@@ -101,3 +101,48 @@ Never type
     - never is another type that function returns.
     - utility functions like throwError or in general any functions that we know will never return anything.
     - Such functions can be assigned return type never.
+
+-------------------------------------------------------------------------------------------------------------
+THE TYPESCTIPT COMPILER AND ITS CONFIGURATIONS
+-------------------------------------------------------------------------------------------------------------
+
+Watch Mode
+    - In watch mode compiler will Automatically detect changes in ts file.
+    - And will recompile the file accordingly : tsc file.ts --watch
+    - we can also watch directory in case we have multiple ts files.
+    - To watch directory : tsc --init -> tsc --watch
+
+Including and Excluding files
+    - We can include or exclude file if we want it not to be watched.
+    - In tsconfig.json => "exclude":[] or "include":[].
+
+Setting Compilation Target
+    - We can also set target that in which version of js the ts code should be translated.
+    - Older browsers do not have support to es6+ so we can set target for es5.
+    - How : in compilerOptions object in json => "target" : "es5"
+
+Typescript Core Libraries
+    - There is lib property in the json file.
+    - By default it is commented so all the default libraries, js functions, dom apis are available.
+    - If we uncomment that it will throw error.
+    - we have to explicitly mention some libs there.
+
+Source Map
+    - helps us with debugging and development
+    - sourceMap property in tsconfig.json
+    - if we set sourceMap to true then *.js.map file will be generated.
+    - we will have ts files in sources (in dev tool) after doing same.
+
+NOTE 
+    - ourDir : we can specify directory to store our compiled ts files.
+    - rootDir :  we can set to set our source code directory.
+    - removeComments : remove comments from ts
+    - noEmit - do not generate js file
+
+Strict Compilation
+    - "strict": true,Enable all strict type-checking options.
+    - "noImplicitAny": true,Enable error reporting for expressions and declarations with an implied `any` type..
+    - "strictNullChecks": true,When type checking, take into account `null` and `undefined`. */
+    - "strictFunctionTypes": true,When assigning functions, check to ensure parameters and the return values are subtype-compatible.
+    - "strictBindCallApply": true, Check that the arguments for `bind`, `call`, and `apply` methods match the original function.
+    - "strictPropertyInitialization": true, Check for class properties that are declared but not set in the constructor. 
