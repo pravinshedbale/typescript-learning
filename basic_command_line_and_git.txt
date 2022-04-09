@@ -1,0 +1,65 @@
+pwd - print working directory - it print current working directory in the console.
+cd - change directory - used to change directory.
+
+mkdir<name> - make directory with given name
+mkdir -p <name1>/<name2> - makes a folder of name2 inside name1
+
+ls - List all the items/files available in current directory
+
+touch <filename> - creates the file with name specified in file name
+rm <filename> - Deletes the file specified in the file name
+rmdir <dirname> - Deletes the directory specified in the directory name
+
+cp <src> <dest> - copy the files from source and pastes then in destination path.
+cp -R <src> <dest> - Copy the directory from source and pastes them in destination path. (R - recursive).
+
+mv <src> <dest> - Moves file/directory from source path to destination path.
+
+---------------------------------------------------------------------------------------------------
+
+Configuration
+    - CHECK VERSION : git --version
+    - SET : git config --global user.name "username" user.email "useremail"
+    - CHECK : git config --list
+
+---------------------------------------------------------------------------------------------------
+Git Basics
+
+    - INITIALIZATION OF REPOSITORY : git init =>Create empty git rempository / convert an existing unversioned project to git repository.
+    
+    - .git subdirectory contains all the necessary git metadata for the repository.
+    
+    - ADD FILE TO STAGING AREA 
+        - git add filename
+
+    - ADD ALL FILES TO STAGING AREA
+        - git add --all
+        - git add -A
+        - git add .
+    
+    - COMMIT FILES (Add staged changes to the local repository)
+        - git commit
+        - git commit -m "Message"
+    
+
+    - CHECK STATUS (Status of staging area)
+        - git status
+
+    - CHECK HISTORY OF COMMITS
+        - git log
+
+----------------------------------------------------------------------------------------------------
+
+Branching
+    - In Git, branches are a part of your everyday development process. Git branches are effectively a pointer to a snapshot of your changes
+    - Default branch in git is master branch.
+
+    - CREATE BRANCH
+        - git branch branchname
+    
+    - SWITCHING BETWEEN BRANCH
+        - git checkout branchname
+
+    - CREATE + CHECKOUT
+        - git cheout -b branchname
+s
