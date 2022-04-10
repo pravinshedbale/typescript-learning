@@ -15,14 +15,14 @@ cp -R <src> <dest> - Copy the directory from source and pastes them in destinati
 
 mv <src> <dest> - Moves file/directory from source path to destination path.
 
----------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------
 
 Configuration
     - CHECK VERSION : git --version
     - SET : git config --global user.name "username" user.email "useremail"
     - CHECK : git config --list
 
----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 Git Basics
 
     - INITIALIZATION OF REPOSITORY : git init =>Create empty git rempository / convert an existing unversioned project to git repository.
@@ -48,7 +48,7 @@ Git Basics
     - CHECK HISTORY OF COMMITS
         - git log
 
-----------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------
 
 Branching
     - In Git, branches are a part of your everyday development process. Git branches are effectively a pointer to a snapshot of your changes
@@ -62,4 +62,55 @@ Branching
 
     - CREATE + CHECKOUT
         - git cheout -b branchname
-s
+
+    - DELETE A BRANCH
+        - git branch -d branchname (Error if branch is not fully merged).
+    
+    - FORCE DELETE BRANCH
+        - git branch -D branchname
+
+Merging
+    - Firstly checkout the branch in which we want another to be merged
+    - git merge branch2name
+    
+    - Recursive Merging : its in case where more than one branches are created from a single point.
+
+Merge Conflict
+    - A merge conflict is an event that occurs when git is unable to automatically resolve differences
+      in code between two commits.
+    
+Rebasing
+    - rebasing is changing the base of your branch from one commit to another making it appear as if 
+      you'd created your branch from a different commit
+
+    - REBASE BRANCH
+        - git rebase branch2name
+    
+    - Advantage of Rebasing
+        - Log history looks more clean as every commits even the commits in the other branch will be 
+          added together. So you can have a look at all the commits of all branch together.
+
+    - Disadvantage of Rebasing
+        - Never rebase commits that exists outside your repository.
+
+Reflog
+    - The reflog is basically a list of commits that HEAD has previously pointed to or you can say undo history of repository.
+    - git reflog
+
+Stashing
+    - Stashing takes modified tracked files, stages changes, and saves them on a stack of unfinished changes that you can reapply at
+      any time.
+    - git stash : stash the stagged changes.
+    - git stash list - gives list of all stashes.
+    - git stash apply stash @{}
+    - git stash drop stash@{}
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+Extra Tools
+    - Cleaning the working repository
+        - git clean -f -d
+
+    - Changing commit message and content
+        - Suppose in case you commit files previously with a wrong message. Now you want
+          to update that message in this case this command is helful
+        - git commit --amend
