@@ -110,7 +110,12 @@ Extra Tools
     - Cleaning the working repository
         - git clean -f -d
 
-    - Changing commit message and content
+    - Changing commit message
         - Suppose in case you commit files previously with a wrong message. Now you want
           to update that message in this case this command is helful
         - git commit --amend
+    
+    - Changing file content
+        - Update the content in the file.
+        - Add file to staging area.
+        - The use git commit --amend
