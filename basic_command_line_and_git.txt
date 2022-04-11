@@ -119,3 +119,19 @@ Extra Tools
         - Update the content in the file.
         - Add file to staging area.
         - The use git commit --amend
+
+    - Checking Past commits
+        - git checkout commitID
+
+    - Get back to last commit
+        - git switch -
+
+    - If we checked out to previous commit and added some changes there they cant be added in between
+      regular flow.
+      hence we can create a separate branch of that changes and the command for that is
+      - git switch -c branchname
+
+    - Git Reset : Deletes the commit from top and resets the head to the given id
+        - git reset commidID : By default it is soft. Deletes the commit but you can still get back the chnages introduced
+          in those commits.
+        - git reset commitID --hard : Deletes the commits and even the changes introduced in that commit.
