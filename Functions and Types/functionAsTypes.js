@@ -6,3 +6,7 @@ function printResult(num) {
     console.log(num);
 }
 printResult(add(10, 20));
+let printResult2 = printResult;
+printResult2 = 5; //Not acceptable
+let addDummy;
+addDummy = add;

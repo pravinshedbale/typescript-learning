@@ -135,3 +135,11 @@ Extra Tools
         - git reset commidID : By default it is soft. Deletes the commit but you can still get back the chnages introduced
           in those commits.
         - git reset commitID --hard : Deletes the commits and even the changes introduced in that commit.
+
+    - Reverting commits : The changes introduced by the commit can be reversed using revert command.
+        - git revert commitID : reverts the commit and again commit the result.
+        - git revert -n commitID : reverts the commit but do not again commit the result.
+        - git revert -abort : Aborts the current revert operation.
+    
+    - Cherry Picking Command : 
+        - git cherry-pick commidID

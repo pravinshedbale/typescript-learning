@@ -1,10 +1,12 @@
-var person = {
+"use strict";
+const person = {
     name: "Pravin",
     age: 21,
-    hobbies: ["Sports", "Cooking"]
+    hobbies: ["Sports", "Cooking"],
 };
-var favActivities; //Accepts only string
+let favActivities; //Accepts only string
 favActivities = ["Sports", "Cooking"];
 console.log(favActivities);
-console.log(person);
+// OBJECTS
+// console.log(person);
 // console.log(person.fullname); // throws error

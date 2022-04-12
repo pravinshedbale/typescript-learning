@@ -1,3 +1,4 @@
+"use strict";
 function add(n1, n2, showResult, resultPhrase) {
     if (showResult) {
         alert(n1 + n2);
@@ -6,8 +7,8 @@ function add(n1, n2, showResult, resultPhrase) {
         alert(resultPhrase);
     }
 }
-var number1 = 10;
-var number2 = 20.5;
-var showResult = false;
-var resultPhrase = "You have selected not to log result .....";
-var result = add(number1, number2, showResult, resultPhrase);
+const number1 = 10;
+const number2 = 20.5;
+const showResult = false;
+const resultPhrase = "You have selected not to log result .....";
+const result = add(number1, number2, showResult, resultPhrase);

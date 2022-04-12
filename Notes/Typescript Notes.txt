@@ -146,3 +146,15 @@ Strict Compilation
     - "strictFunctionTypes": true,When assigning functions, check to ensure parameters and the return values are subtype-compatible.
     - "strictBindCallApply": true, Check that the arguments for `bind`, `call`, and `apply` methods match the original function.
     - "strictPropertyInitialization": true, Check for class properties that are declared but not set in the constructor. 
+
+Typescript Supports Modern JS features like : 
+    - Arrow Functions.
+    - Rest Operator.
+    - Default Function parameters.
+    - Rest parameters.
+
+-------------------------------------------------------------------------------------------------------
+CLASSES AND INTERFACES
+-------------------------------------------------------------------------------------------------------
+Classes : Blueprint for Objects (Definition of how object look like, which properties and methods they have)
+Object : The things you work with in code, (Instance of classes)
