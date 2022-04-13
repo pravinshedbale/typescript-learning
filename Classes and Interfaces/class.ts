@@ -1,11 +1,32 @@
 class Department {
-    name: string;
+    protected employees: string[] = [];
+    constructor(private id: string, private readonly name: string) {}
+    describe(this: Department) {
+        console.log(`Department : ${this.name}`);
+    }
 
-    constructor(n: string) {
-        this.name = n;
+    addEmployee(employee: string) {
+        this.employees.push(employee);
+    }
+
+    printEmployeeInformation() {
+        console.log(this.employees.length);
+        console.log(this.employees);
     }
 }
 
-const d = new Department("Computer Science and Engineering");
+class ITDepartment extends Department {
+    constructor(id: string) {
+        super(id, "IT");
+    }
+}
 
-console.log(d.name);
+const cse = new Department("cse", "Computer Science and Engineering");
+const it = new ITDepartment("it");
+
+it.addEmployee("Pravin");
+it.addEmployee("Sandesh");
+it.addEmployee("Deepak");
+
+it.describe();
+it.printEmployeeInformation();
