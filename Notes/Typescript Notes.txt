@@ -158,3 +158,7 @@ CLASSES AND INTERFACES
 -------------------------------------------------------------------------------------------------------
 Classes : Blueprint for Objects (Definition of how object look like, which properties and methods they have)
 Object : The things you work with in code, (Instance of classes)
+
+Inheritance
+    - we can inherit the properties of a class in another class with the help of extends keyword.
+    -  
