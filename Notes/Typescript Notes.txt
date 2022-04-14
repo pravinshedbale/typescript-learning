@@ -170,3 +170,17 @@ Getter :
 Setter :
     - setter method id defined with the keyword 'set' at the begining.
     - setter method has to take atleast one argument.
+
+Abstract Method:
+    - If any of the member function of the class is asbstract then the class has to be abstract.
+    - Abstract member function must be implemented in inherited class.
+    - Abstract classes cant be instantiated.
+
+Singleton and Private constructor
+    - Singleton Pattern : Should have exactly only one instance of the class.
+    - Make constructor private.
+    - create static instance.
+    - create private static method to get instance.
+    - if instance is set return it.
+    - else set new instance to that static instance variable and return it.
+    - this is how singleton pattern is implemented to ensure only one object get created.
