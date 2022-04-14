@@ -161,4 +161,12 @@ Object : The things you work with in code, (Instance of classes)
 
 Inheritance
     - we can inherit the properties of a class in another class with the help of extends keyword.
-    -  
+    - private members cannot be inherited hence we can add 'protected' access modifier to inherit it.
+
+Getter :
+    - getter method is defined with the keyword 'get' at the begining of it.
+    - getter method has to return something.
+
+Setter :
+    - setter method id defined with the keyword 'set' at the begining.
+    - setter method has to take atleast one argument.
