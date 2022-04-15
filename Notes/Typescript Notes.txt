@@ -79,7 +79,7 @@ Function Return Type
 
 Functions as Types
     - Sometimes we create a reference to function.
-    - By default any variable creted in ts has type any.
+    - By default any variable created in ts has type any.
     - After assigning function to variable one can assign any type of value to it.
     - This is not expected.
     - So typescript also introduces Function type.
@@ -184,3 +184,12 @@ Singleton and Private constructor
     - if instance is set return it.
     - else set new instance to that static instance variable and return it.
     - this is how singleton pattern is implemented to ensure only one object get created.
+
+Interface
+    - Interface describes the structure of the object.
+    - we can create interface with the help of interface keyword.
+    - we can specifiy members, member functions in interface.
+    - example : greet() : void;
+    - We can implement interface in a class.
+    - We can implement interface using keyword implements.
+    - We can extend interface in another interface.
