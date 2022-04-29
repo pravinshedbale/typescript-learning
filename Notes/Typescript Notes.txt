@@ -75,7 +75,7 @@ Function Return Type
     - By default ts Automatically infers the return type.
     - Also we can explicitly assign the return type to the function.
     - example: function name(params):returntype {...body...}
-    - Ts also have void return type.
+    - Ts also have void return type..
 
 Functions as Types
     - Sometimes we create a reference to function.
@@ -193,3 +193,5 @@ Interface
     - We can implement interface in a class.
     - We can implement interface using keyword implements.
     - We can extend interface in another interface.
+    - Interface as function type.
+    - Optional properties in interface can be introduced with ? infront of it.
