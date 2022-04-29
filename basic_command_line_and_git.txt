@@ -61,7 +61,7 @@ Branching
         - git checkout branchname
 
     - CREATE + CHECKOUT
-        - git cheout -b branchname
+        - git checkout -b branchname
 
     - DELETE A BRANCH
         - git branch -d branchname (Error if branch is not fully merged).
